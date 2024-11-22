@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "View Employee Details";
+}
+
+ <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light  ">
+            <div class="container-fluid">
+                <img src="~/images/Elogo.png" style="width: 5%;margin-right:30px;"  alt="LOGO">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IDENTITY MANAGEMENT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse  justify-content-between">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Profile"><b>Profile</b></a>
+                          <li class="nav-item">  <a class="nav-link text-dark" asp-area="" asp-controller="EmployeeData" asp-action="Indexes"><b>View Details</b></a></li> 
+                        
+                              <li class="nav-item">   <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Request"><b>Request</b></a>
+                        </li></ul>
+                          <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" >
+                        <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="EmployeeLogin"><b>Logout</b></a>
+                        </li>
+                    </ul>
+                </div> 
+                         
+            </div>
+                  
+            </div>
+        </nav>
+ 
+  
+ <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
